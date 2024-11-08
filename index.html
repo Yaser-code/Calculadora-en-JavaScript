@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="sub-contenedor">
+            <textarea name="" id="casillaNumeros" disabled></textarea>
+        </div>
+        <div class="sub-contenedor">
+            <button onclick="borrarUltimoCaracter()" id="BorrarTodo">CE</button>
+            <button onclick="botonC()" id="borrarCaracter">C</button>
+        </div>
+        <div class="sub-contenedor">
+            <button onclick="num9()">9</button>
+            <button onclick="num8()">8</button>
+            <button onclick="num7()">7</button>
+            <button onclick="operadorDivision()">/</button>
+        </div>
+        <div class="sub-contenedor">
+            <button onclick="num6()">6</button>
+            <button onclick="num5()">5</button>
+            <button onclick="num4()">4</button>
+            <button onclick="operadorMulti()">X</button>
+        </div>
+        <div class="sub-contenedor">
+            <button onclick="num3()">3</button>
+            <button onclick="num2()">2</button>
+            <button onclick="num1()">1</button>
+            <button onclick="operadorResta()">-</button>
+        </div>
+        <div class="sub-contenedor">
+            <button onclick="num0()">0</button>
+            <button onclick="punto()">.</button>
+            <button onclick="operadorSuma()">+</button>
+            <button onclick="resultadoOperacion()" id="igualdad">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
